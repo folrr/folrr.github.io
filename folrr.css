@@ -1,0 +1,519 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css
+Copyright (c) Nicolas Gallagher and Jonathan Neal */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section,summary {
+  display: block;
+}
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active, a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b, strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button, select {
+  text-transform: none;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  cursor: pointer;
+}
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td, th {
+  padding: 0;
+}
+/*csslint important:false*/
+.hidden {
+  display: none !important;
+}
+/*csslint important:true*/
+
+/*  Additions to normalize.css | Copyright (c) Friends of the Library of Rio Rancho, Inc.
+    Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License */
+
+body {
+  background: #ffe6ff url("./image/book-background-525x350-dim.jpg") repeat;
+  color: black;
+  font-family: "Palatino Linotype", Baskerville, Georgia, "Times New Roman", Times, serif;
+  font-size: 110%;
+  line-height: 1.3;
+}
+h1, h2, h3, h4, h5, h6, #nav {
+  font-family: FreeSans, Arimo, "Droid Sans", Verdana, "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0.1em;
+  line-height: 1.2;
+}
+.serif {
+  font-family: "Palatino Linotype", Baskerville, Georgia, "Times New Roman", Times, serif;
+}
+.san-serif {
+  font-family: FreeSans, Arimo, "Droid Sans", Verdana, "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a:link {
+  color: black;
+  text-decoration: underline;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: grey;
+}
+p {
+  line-height: 1.3;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+form {
+  margin-bottom: 1em;
+}
+/* Photo banner with branding */
+#banner {
+  height: 75%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+}
+#banner img {
+  left: 0;
+  bottom: 25%;
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+#header table {
+  border: none;
+  color: white;
+  float: left;
+  text-align: center;
+  text-shadow: 1px 1px black,
+    -1px 1px black,
+    -1px -1px black,
+    1px -1px black;
+}
+#header td {
+  border: none;
+}
+#header img {
+  width: 10em;
+  padding: 5%;
+}
+#header h1 {
+  min-width: 5em;
+}
+.align-left {
+  text-align: left;
+}
+.mail-address {
+  padding-left: 2em;
+}
+/* navigation menu (horizontal) */
+#nav {
+  background: white;
+  margin: 1em 0 0 0;
+  padding: 0;
+  border-top: 2px solid #6f5499;
+  border-bottom: 2px solid #6f5499;
+}
+#nav li {            /* all menu entries */
+  display: block;
+  list-style: none;
+  margin: 0;
+  text-decoration: none;
+}
+#nav a {
+  display: block;
+  margin: 0.1em;
+  padding: 0.1em 0.1em 0.1em 1em;
+}
+#nav a:hover {
+  background-color: #6f5499;
+  color: white;
+  text-decoration: none;
+}
+#nav > li {          /* top-level entries */
+  float: left;
+  padding: 0.5em 0.1em 0.5em 2em;
+  position: relative;
+  text-align: left;
+  width: 8em;
+}
+#nav ul {            /* second-level entries */
+  background-color: white;
+  display: none;
+  position: absolute;
+  list-style: none;
+  left: 3em;
+  margin: 0;
+  top: 100%;
+  text-align: left;
+  width: 8em;
+}
+#nav li:hover ul {
+  display: block;
+  z-index: 1;
+}
+#nav ul li {
+  border-bottom: solid 2px #ccc;
+  margin-left: -2em;
+  padding: 0.1em 0;
+}
+#nav ul a {
+  text-decoration: none;
+}
+/*  Make current-page menu entry <li#nav-x> look inactive when body#x exists.
+    Example: <body id="home"> inactivates <li id="nav-home">
+*/
+#home   #nav-home   a,
+#sales  #nav-sales  a,
+#stores  #nav-stores a,
+#donate #nav-donate a,
+#member #nav-member a,
+#more   #nav-more   a {
+  cursor: default;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+#home   #nav-home   ul,
+#sales  #nav-sales  ul,
+#stores  #nav-stores ul,
+#donate #nav-donate ul,
+#member #nav-member ul,
+#more   #nav-more   ul {
+  display: none;
+}
+#content {
+  background: #ffe6ff url("./image/book-background-525x350-dim.jpg") repeat;
+}
+/* cards: block of text with border and header */
+.cards {
+  margin: 0em 1em;
+  text-align: center;
+}
+.row:before, .row:after { /* float containment */
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.row {
+  zoom: 1; /* For IE 6/7 */
+}
+.card {                   /* 3 cards in window  by default */
+  background-color: white;
+  border: 1px solid #ccc;
+  display: inline;        /* IE 6 hack; remains block */
+  float: left;
+  margin: 1em;
+  overflow-y: hidden;     /* IE 7 hack */
+  padding: 0;
+  min-width: 20em;
+  width: 30%;             /* default: 3 cards in the window */
+}
+.card h3 {
+  margin: 0.5em 0;
+}
+.card-header {
+  background: #6f5499;
+  color: white;
+  margin: 0;
+}
+.card-header h2 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: normal;
+}
+.card-header i {
+  margin: 0;
+  font-size: 6em;
+  font-weight: normal;
+  padding-bottom: 0.2em;
+}
+.card-body {
+  margin-top: 1em;
+  padding: 1em;
+  height: 40em;
+  overflow-y: auto;
+}
+.card-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.card-list li {
+  padding: 0.8em 0;
+  background: #f7f7f7;
+  border-bottom: 1px solid #e7e7e7;
+}
+@media only screen and (max-width: 75em) and (min-width: 40em) {
+  .card {
+    width: 60%;
+    margin: 1em 20%;
+  }
+  .card-body {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .card {
+    width: 94%;
+    margin: 1em 3%;
+  }
+  .card-body {
+    height: auto;
+  }
+}
+table {
+  border-collapse: collapse;
+  margin: 1em auto;
+  border: 1px solid #ccc;
+}
+th {
+  background-color: #6f5499;
+  color: white;
+  font-size: 125%;
+  text-align: center;
+}
+td, th {
+  border: 2px solid #ccc;
+  padding: 0.3em 1em;
+}
+td.price {
+  text-align: right;
+}
+tfoot td {
+  border: 0;
+  text-align: center;
+}
+#email label, #about label {  /* email forms */
+  display: block;
+  margin: 1em 1em 0 1em;
+  text-align: left;
+}
+#email input, #about input {
+  display: block;
+  float: left;
+  font-size: 100%;
+  margin: 0 1em 1em 1em;
+  min-width: 14em;
+  padding: 0.5em 0;
+  text-indent: 2%;
+  width: 90%;
+}
+#email h4, #about h4 {
+  text-align: center;
+}
+.gotcha {
+  position: absolute;
+  left: -5000px;
+}
+/* CSS-only accordion. See https://codepen.io/owlsky/pen/FCovk */
+.a-container {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.a-container input[type=radio] {
+  display: none;
+}
+.a-container {
+  width: 100%;
+  margin: 20px auto;
+}
+.a-container label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding: 0.2em 1em;
+  background: #ffe6ff;
+  border: 2px solid grey;
+}
+.a-container label h3 {
+  color: black;
+  font-weight: normal;
+}
+/* down triangle */
+.a-container label:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 8px solid black;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 6px solid transparent;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+.a-container input:checked + label h3,
+.a-container label:hover h3 {
+  font-weight: bold;
+}
+/* up triangle: almost invisible since doesn't close accordian */
+.a-container input:checked + label:after {
+  border-top: 8px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid white;
+  border-left: 6px solid transparent;
+  right: 1em;
+  top: 1em;
+}
+.a-content {
+  padding: 0.5em 1em;
+  display: none;
+}
+.a-container input:checked ~ .a-content {
+  display: block;
+}
+
+/* footer */
+#footer {
+  background: #6f5499;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  padding: 0.5em;
+}
+#footer div {
+  width: 75%;
+  min-width: 20em;
+  margin: 1em auto;
+}
+#footer a {
+  color: white;
+}
